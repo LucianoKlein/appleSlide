@@ -1,0 +1,192 @@
+* {
+	box-sizing: border-box;
+}
+
+title {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+b {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	background-color: #F2F2F2;
+}
+
+
+.main {
+
+	font-weight: normal;
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+.topTitle {
+	text-align: center;
+}
+
+.topTitle h1 {
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size: 42px;
+	color: #444444;
+	margin-top: 42px;
+}
+
+.topTitle h2 {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.topTitle b {
+	font-size: 42px;
+	color: #444444;
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+}
+.main h2 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: lighter;
+	margin-top: 17px;
+}
+
+a, a:visited {
+	color: #0196e3;
+	text-decoration: none;
+	outline: none;
+}
+
+.main .gallery {
+	position: relative;
+	border: 1px #EAEAEA solid;
+	display: block;
+	margin: 27px auto;
+	max-width: 922px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px 2px #EAEAEA;
+}
+
+.gallery .left {
+	position: absolute;
+	top: 170px;
+	left: 10px;
+	display: none;
+	z-index: 1;
+}
+
+.gallery .left:hover {
+	cursor: pointer;
+}
+
+.gallery:hover .left {
+	display: block;
+}
+
+.gallery .right {
+	position: absolute;
+	top: 170px;
+	right: 10px;
+	display: none;
+	z-index: 1;
+}
+
+.gallery .right:hover {
+	cursor: pointer;
+}
+
+.gallery:hover .right {
+	display: block;
+}
+
+.gallery .icon {
+	font-size: 60px;
+	color: #dddddd;
+}
+
+.main .gallery .window {
+	max-height: 400px;
+	max-width: 920px;
+	border: 1px #D8D8D8 solid;
+	border-radius: 8px;
+	margin: 0px auto 0px auto;
+
+	overflow: hidden;
+	background-color: white;
+	border-radius: 3px;
+}
+
+.main .gallery .window .slides {
+	display: flex;
+	transition: all 1s;
+}
+
+.main .gallery .window img {
+	height: 400px;
+	width:  920px;
+}
+
+.main .gallery .panelWrapper {
+	display: block;
+	border: 1px #D8D8D8 solid;
+	border-radius: 4px;
+}
+
+.main .gallery .panel {
+	background-image: url(../img/panel.jpg);
+	max-height: 47px;
+	max-width: 920px;
+	border: 1px white solid;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+
+.main .gallery .panel .buttons {
+	vertical-align: middle;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+}
+
+.main .gallery .panel .buttons .buttonWrapper{
+	width: 60px;
+	height: 45px;
+	display: inline-block;
+	padding-top: 8px;
+}
+
+.main .gallery .panel .buttons .buttonWrapper:hover{
+	cursor: pointer;
+}
+
+.main .gallery .panel .buttons .buttonWrapper.active {
+	background-image: url(../img/active_bg.png);
+}
+
+
+.panel .buttons a{
+	height: 45px;
+}
+
+
+.footer {
+	font-family: arial;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 10px;
+}
